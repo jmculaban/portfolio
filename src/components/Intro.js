@@ -4,19 +4,21 @@ import Row from 'react-bootstrap/Row';
 
 const Intro = () => {
   return (
-    <Jumbotron fluid>
-      <h1>
-      <Row className="intro-weight">
-        Hello.
-      </Row>
-      <Row className="intro-color">
-        I am
-      </Row>
-      <Row className="intro-color intro-weight">
-        Michael
-      </Row>
-    </h1>
-    </Jumbotron>
+    <div className="max-width">
+      <div className="vertical-center">
+        <h1>
+          <Row className="intro-block intro-weight">
+            Hello.
+          </Row>
+          <Row className="intro-block intro-color">
+            I am
+          </Row>
+          <Row className="intro-block intro-color intro-weight">
+            Michael
+          </Row>
+        </h1>
+      </div>
+    </div>
   );
 };
 
