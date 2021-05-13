@@ -25,6 +25,13 @@ a {
   color: inherit;
 }
 
+#hello-text:hover,
+#i-text:hover,
+#name-text:hover {
+  margin-left: 35px;
+  transition: 0.4s
+}
+
 @media screen and (max-width: 992px) { 
   .max-width {
     max-width: 78%;
@@ -34,6 +41,12 @@ a {
 @media screen and (max-width: 767px) { 
   .max-width {
     max-width: 78%;
+  }
+
+  #hello-text:hover,
+  #i-text:hover,
+  #name-text:hover {
+    margin-left: 0;
   }
 }
 

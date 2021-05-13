@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Row from 'react-bootstrap/Row';
 
 const Intro = () => {
@@ -25,13 +25,13 @@ const Intro = () => {
     <div className="max-width">
       <div className="vertical-center">
         <h1>
-          <Row onMouseOver={helloOver} onMouseLeave={helloLeave} className="intro-block intro-weight">
+          <Row id="hello-text" onMouseOver={helloOver} onMouseLeave={helloLeave} className="intro-block intro-weight">
             Hello.
           </Row>
-          <Row onMouseOver={iOver} onMouseLeave={iLeave} className="intro-block intro-color">
+          <Row id="i-text" onMouseOver={iOver} onMouseLeave={iLeave} className="intro-block intro-color">
             I am
           </Row>
-          <Row onMouseOver={nameOver} onMouseLeave={nameLeave} className="intro-block intro-color intro-weight">
+          <Row id="name-text" onMouseOver={nameOver} onMouseLeave={nameLeave} className="intro-block intro-color intro-weight">
             Michael
           </Row>
         </h1>
