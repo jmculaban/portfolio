@@ -12,7 +12,9 @@ function App() {
         <Container>
           <Row>
             <Col>
-              <Route exact path='/' component={Home} />
+              <Switch>
+                <Route exact path='/' component={Home} />
+              </Switch>
             </Col>
           </Row>
         </Container>
