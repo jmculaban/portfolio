@@ -79,10 +79,8 @@ h1 {
   bottom: 0;
   left: 35%;
   background-image: url('./assets/img/bg-photo.png');
-  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: red; */
 }
 
 @keyframes bounce {
@@ -129,7 +127,7 @@ h1 {
   }
 
   .profile-picture {
-    left: 20%; 
+    left: 30%; 
   }
 }
 
@@ -142,6 +140,7 @@ h1 {
   #i-text:hover,
   #name-text:hover {
     margin-left: 0;
+    transition: 0.5s;
   }
 
   .profile-picture {
@@ -165,12 +164,12 @@ h1 {
 
 @media screen and (max-width: 414px) {
   .profile-picture {
-    left: -10%;
+    left: -15%;
   }
 }
 
 @media screen and (max-width: 375px) {
   .profile-picture {
-    left: -10%;
+    left: -18%;
   }
 }

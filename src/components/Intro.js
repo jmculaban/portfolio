@@ -3,22 +3,41 @@ import Row from 'react-bootstrap/Row';
 
 const Intro = () => {
   const helloOver = (e) => {
-    e.target.innerHTML = '<a href="/About">About</a>';
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = '<a href="/About">About</a>';
+    }
   }
   const helloLeave = (e) => {
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = '<a href="/About">About</a>';
+    }
     e.target.innerHTML = 'Hello.'
   }
   const iOver = (e) => {
-    e.target.innerHTML = '<a href="/Work">Work</a>';
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = '<a href="/Work">Work</a>';
+    }
   }
   const iLeave = (e) => {
-    e.target.innerHTML = 'I am';
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = 'I am';
+    }
   }
   const nameOver = (e) => {
-    e.target.innerHTML = '<a href="/Contact">Contact</a>';
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = '<a href="/Contact">Contact</a>';
+    }
   }
   const nameLeave = (e) => {
-    e.target.innerHTML = 'Michael';
+    const { matches } = window.matchMedia('(max-width: 767px)');
+    if (!matches) {
+      e.target.innerHTML = 'Michael';
+    }
   }
 
   return (
