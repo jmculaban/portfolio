@@ -34,26 +34,8 @@ a {
 #hello-text:hover,
 #i-text:hover,
 #name-text:hover {
-  margin-left: 35px;
-  transition: 0.6s
-}
-
-@media screen and (max-width: 992px) { 
-  .max-width {
-    max-width: 78%;
-  }
-}
-
-@media screen and (max-width: 767px) { 
-  .max-width {
-    max-width: 78%;
-  }
-
-  #hello-text:hover,
-  #i-text:hover,
-  #name-text:hover {
-    margin-left: 0;
-  }
+  margin-left: 38px;
+  transition: 0.4s
 }
 
 .vertical-center {
@@ -96,15 +78,65 @@ h1 {
   right: 0;
   bottom: 0;
   left: 35%;
-  background-image: url('./assets/img/profile2.png');
+  background-image: url('./assets/img/bg-photo.png');
   /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   /* background-color: red; */
 }
 
-@media screen and (max-width: 767px) { 
+/*X-Large devices (large desktops, less than 1400px)*/
+@media screen and (max-width: 1400px) { 
+
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media screen and (max-width: 1200px) { 
   .profile-picture {
-    left: -8%; 
+    left: 30%; 
+  }
+}
+
+@media screen and (max-width: 992px) { 
+  .max-width {
+    max-width: 78%;
+  }
+
+  .profile-picture {
+    left: 20%; 
+  }
+}
+
+@media screen and (max-width: 767px) { 
+  .max-width {
+    max-width: 78%;
+  }
+
+  #hello-text:hover,
+  #i-text:hover,
+  #name-text:hover {
+    margin-left: 0;
+  }
+
+  .profile-picture {
+    left: 30%; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .profile-picture {
+    left: 10%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .profile-picture {
+    left: -10%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .profile-picture {
+    left: -10%;
   }
 }
