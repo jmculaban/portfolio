@@ -7,13 +7,13 @@ const Links = () => {
       <div className="vertical-center">
         <h1>
           <Row className="intro-block intro-weight animate">
-            <a href="/About">About</a>
+            <a href="/about">About</a>
           </Row>
           <Row className="intro-block intro-color animate delay04">
-            <a href="/Work">Work</a>
+            <a href="/work">Work</a>
           </Row>
           <Row className="intro-block intro-color intro-weight animate delay08">
-            <a href="/Contact">Contact</a>
+            <a href="/contact">Contact</a>
           </Row>
         </h1>
       </div>

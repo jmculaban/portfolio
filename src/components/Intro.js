@@ -5,7 +5,7 @@ const Intro = () => {
   const helloOver = (e) => {
     const { matches } = window.matchMedia('(max-width: 767px)');
     if (!matches) {
-      e.target.innerHTML = '<a href="/About">About</a>';
+      e.target.innerHTML = '<a href="/about">About</a>';
     }
   }
   const helloLeave = (e) => {
@@ -17,7 +17,7 @@ const Intro = () => {
   const iOver = (e) => {
     const { matches } = window.matchMedia('(max-width: 767px)');
     if (!matches) {
-      e.target.innerHTML = '<a href="/Work">Work</a>';
+      e.target.innerHTML = '<a href="/work">Work</a>';
     }
   }
   const iLeave = (e) => {
@@ -29,7 +29,7 @@ const Intro = () => {
   const nameOver = (e) => {
     const { matches } = window.matchMedia('(max-width: 767px)');
     if (!matches) {
-      e.target.innerHTML = '<a href="/Contact">Contact</a>';
+      e.target.innerHTML = '<a href="/contact">Contact</a>';
     }
   }
   const nameLeave = (e) => {
