@@ -28,12 +28,12 @@ const Home = () => {
   });
 
   return (
-    <div>
+    <div onClick={clickIndication}>
       <Intro />
       <Link />
       <Footer />
       <Profile />
-      <div id="tap-window" onClick={clickIndication}></div>
+      {/* <div id="tap-window" ></div> */}
     </div>
   );
 };
