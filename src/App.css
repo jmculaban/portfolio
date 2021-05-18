@@ -15,11 +15,6 @@ body {
   margin: 0 auto;
 }
 
-/* .hide-block {
-  display: none;
-  max-width: 59%;  
-} */
-
 a {
   text-decoration: none;
   color: inherit;
@@ -71,6 +66,17 @@ h1 {
   overflow: hidden;
 }
 
+@keyframes bg-photo {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
+
 .profile-picture {
   z-index: -9;
   position: fixed;
@@ -81,6 +87,8 @@ h1 {
   background-image: url('./assets/img/bg-photo.png');
   background-size: cover;
   background-repeat: no-repeat;
+  animation: bg-photo 1.6s cubic-bezier(.5, .6, .6, 1);
+  animation-fill-mode: backwards;
 }
 
 @keyframes bounce {
@@ -117,14 +125,14 @@ h1 {
   display: none;
 }
 
-.open {
+.show {
   display: block;
 }
 
 @keyframes animate {
   0% {
     opacity: 0;
-    transform: translateY(30vh);
+    transform: translateY(20vh);
   }
   100% {
     opacity: 1;
@@ -133,16 +141,21 @@ h1 {
 }
 
 .animate {
-  animation: animate .6s cubic-bezier(0.2, 0.6, 0.2, 1);
+  animation: animate 1s cubic-bezier(0.2, 0.6, 0.2, 1);
   animation-fill-mode: backwards;
 }
 
 .delay04 {
-  animation-delay: 0.4s;
+  animation-delay: 0.6s;
 }
 
 .delay08 {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
+}
+
+#tap-window {
+  height: 100vh;
+  z-index: -1;
 }
 
 /*X-Large devices (large desktops, less than 1400px)*/

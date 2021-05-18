@@ -39,24 +39,8 @@ const Intro = () => {
     }
   }
 
-  const smallMedia = window.matchMedia('(max-width: 767px)');
-
-  smallMedia.addEventListener('change', (e) => {
-    console.dir(e.matches)
-    if (e.matches) {
-      const introTap = document?.querySelector('.introTap');
-      console.dir(introTap);
-      if (!introTap?.classList.contain('open')) {
-        console.log("trigger")
-        // document.querySelector('intro-tap').classList.toggle('open');
-      }
-    } else if (!e.matches) {
-      console.log("large")
-    }
-  });
-
   return (
-    <div className="max-width intro-tap open">
+    <div className="max-width intro-tap show">
       <div className="vertical-center">
         <h1>
           <Row id="hello-text" onMouseOver={helloOver} onMouseLeave={helloLeave} className="intro-block intro-weight animate">
