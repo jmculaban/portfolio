@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 
 const Home = () => {
   const media = window.matchMedia('(max-width: 767px)');
-  let linkWindow = false;
 
   const clickIndication = () => {
     if (media.matches) {

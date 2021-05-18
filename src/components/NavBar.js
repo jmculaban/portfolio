@@ -1,10 +1,18 @@
 import React from 'react';
 
 const NavBar = () => {
+  const navBarOver = (e) => {
+    e.target.innerText = "michael.home"
+  }
+
+  const navBarLeave = (e) => {
+    e.target.text = "michael."
+  }
+
   return (
-    <div>
-      <a id='navbar-link' href='/'>michael.</a>
-    </div>
+    <nav>
+      <a id='navbar-link' href='/' onMouseOver={navBarOver} onMouseLeave={navBarLeave}>michael.</a>
+    </nav>
   );
 };
 
