@@ -5,7 +5,7 @@ const NavBar = () => {
   let content;
 
   if (smallMedia.matches) {
-    content = 'home';
+    content = 'michael.home';
   } else {
     content = 'michael.'
   }
@@ -13,7 +13,7 @@ const NavBar = () => {
   smallMedia.addEventListener('change', (e) => {
     if (smallMedia.matches) {
       if (document?.querySelector('#navbar-link')) {
-        document.querySelector('#navbar-link').text = 'home'
+        document.querySelector('#navbar-link').text = 'michael.home'
       }
     } else {
       if (document?.querySelector('#navbar-link')) {
@@ -24,7 +24,7 @@ const NavBar = () => {
 
   const navBarOver = (e) => {
     if (!smallMedia.matches) {
-      e.target.innerText = 'home'
+      e.target.innerText = 'michael.home'
     }
   }
 

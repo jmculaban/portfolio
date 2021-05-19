@@ -3,17 +3,18 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;    
+  box-sizing: border-box;   
 }
 
 body {
   background-color: black;
+  color: white;
   font-family: 'Open Sans', sans-serif;
 }
 
 nav {
   color: white;
-  margin: 3rem 8rem 7rem;
+  margin: 3.5rem 12vw 3.5rem;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
@@ -31,7 +32,8 @@ nav {
 }
 
 .max-width {
-  max-width: 68%;
+  max-width: 72%; 
+  /* max-width: 68%; */
   margin: 0 auto;
 }
 
@@ -43,14 +45,14 @@ a {
 #hello-text,
 #i-text,
 #name-text {
-  transition: margin-left 0.5s;
+  transition: margin-left 0.4s;
 }
 
 #hello-text:hover,
 #i-text:hover,
 #name-text:hover {
   margin-left: 38px;
-  transition: 0.35s
+  transition: 0.30s
 }
 
 .vertical-center {
@@ -60,7 +62,6 @@ a {
   align-items: center;
 }
 
-/* .jumbotron h1 */
 h1 {
   color: white;
   position: fixed;
@@ -175,6 +176,31 @@ h1 {
 #tap-window {
   height: 100vh;
   z-index: -1;
+}
+
+.work-block {
+  margin: 12vh 0;
+}
+
+.work-block h2 {
+  line-height: 180%;
+  font-size: calc(3em + 3vw);
+}
+
+.size-small {
+  color: #318CE7;
+  font-weight: bold;
+  font-size: calc(0.5em + 0.8vw);
+  margin-bottom: 0;
+}
+
+.work-block {
+  transition: margin-left 0.4s;
+}
+
+.work-block:hover {
+  margin-left: 40px;
+  transition: 0.30s
 }
 
 /*X-Large devices (large desktops, less than 1400px)*/

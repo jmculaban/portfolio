@@ -1,10 +1,12 @@
 import React from 'react';
 import NavBar from '../components/NavBar';
+import Projects from '../components/Projects';
 
 const Work = () => {
   return (
-    <div>
+    <div className='animate'>
       <NavBar />
+      <Projects />
     </div>
   );
 };
