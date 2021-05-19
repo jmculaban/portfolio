@@ -249,8 +249,16 @@ h1 {
     display: none;
   }
 
+  #navbar-link:hover {
+    margin-right: 0px;
+  }
+
   .mobile-indication {
     display: block;
+  }
+  
+  .work-block:hover {
+    margin-left: 0px;
   }
 }
 
