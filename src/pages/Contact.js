@@ -5,6 +5,9 @@ const Contact = () => {
   return (
     <div>
       <NavBar />
+      <div className='max-width'>
+        <h2>Let's create great solution!</h2>
+      </div>
     </div>
   );
 };

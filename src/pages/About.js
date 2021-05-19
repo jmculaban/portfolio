@@ -5,6 +5,9 @@ const About = () => {
   return (
     <div>
       <NavBar />
+      <div className='animate max-width'>
+        <h2>About</h2>
+      </div>
     </div>
   );
 };
