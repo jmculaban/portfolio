@@ -1,17 +1,42 @@
 import React from 'react';
 
 const NavBar = () => {
+  const smallMedia = window.matchMedia('(max-width: 767px)');
+  let content;
+
+  if (smallMedia.matches) {
+    content = 'home';
+  } else {
+    content = 'michael.'
+  }
+
+  smallMedia.addEventListener('change', (e) => {
+    if (smallMedia.matches) {
+      if (document?.querySelector('#navbar-link')) {
+        document.querySelector('#navbar-link').text = 'home'
+      }
+    } else {
+      if (document?.querySelector('#navbar-link')) {
+        document.querySelector('#navbar-link').text = 'michael.'
+      }
+    }  
+  });
+
   const navBarOver = (e) => {
-    e.target.innerText = "michael.home"
+    if (!smallMedia.matches) {
+      e.target.innerText = 'home'
+    }
   }
 
   const navBarLeave = (e) => {
-    e.target.text = "michael."
+    if (!smallMedia.matches) {
+      e.target.text = 'michael.'
+    }
   }
 
   return (
     <nav>
-      <a id='navbar-link' href='/' onMouseOver={navBarOver} onMouseLeave={navBarLeave}>michael.</a>
+      <a id='navbar-link' href='/' onMouseOver={navBarOver} onMouseLeave={navBarLeave}>{content}</a>
     </nav>
   );
 };

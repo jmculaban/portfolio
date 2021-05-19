@@ -21,6 +21,15 @@ nav {
   font-size: 3.5vmin;
 }
 
+#navbar-link {
+  transition: margin-right 0.5s;
+}
+
+#navbar-link:hover {
+  margin-right: 20px;
+  transition: 0.35s
+}
+
 .max-width {
   max-width: 68%;
   margin: 0 auto;
