@@ -12,7 +12,7 @@ const Social = () => {
         <Linkedin className='social-logo' />
         Linkedin
       </a>
-      <a className='social-links' href='https://www.facebook.com/jmculaban03' target='_blank' rel="noreferrer">
+      <a className='social-links' href='https://twitter.com/johnmike034' target='_blank' rel="noreferrer">
         <Twitter className='social-logo' />
         Twitter
       </a>
