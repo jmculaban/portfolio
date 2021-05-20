@@ -4,7 +4,7 @@ import Projects from '../components/Projects';
 
 const Work = () => {
   return (
-    <div className='animate'>
+    <div>
       <NavBar />
       <Projects />
     </div>

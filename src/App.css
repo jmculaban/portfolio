@@ -14,12 +14,19 @@ body {
 
 nav {
   color: white;
-  margin: 3.5rem 12vw 3.5rem;
+  /* margin: 3.5rem 12vw 3.5rem; */
   padding: 10px 0;
-  display: flex;
-  justify-content: flex-end;
+  position: fixed;
+  /* display: flex; */
+  width: 100%;
+  text-align: right;
   font-weight: bolder;
   font-size: 3.5vmin;
+  top: 10%;
+}
+
+nav a {
+  margin-right: 8vw;
 }
 
 #navbar-link {
@@ -27,7 +34,7 @@ nav {
 }
 
 #navbar-link:hover {
-  margin-right: 20px;
+  margin-right: 10vw;
   transition: 0.35s
 }
 
@@ -35,6 +42,20 @@ nav {
   max-width: 72%; 
   /* max-width: 68%; */
   margin: 0 auto;
+}
+
+.max-width-inner {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.max-width-inner p {
+  margin-bottom: 1.5em;
+}
+
+.projects,
+.about-block {
+  margin-top: 8.5rem;
 }
 
 a {
@@ -203,6 +224,41 @@ h1 {
   transition: 0.30s
 }
 
+.about-block h2 {
+  font-size: calc(2em + 1.5vw);
+  /* font-size: 4em; */
+}
+
+h4 {
+  font-size: calc(1em + 1.5vw);
+  margin: 9vh 0 3vh 0;
+}
+
+.social-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: #318CE7;
+  margin-bottom: 0.8rem;
+}
+
+.social-logo {
+  margin-right: 0.8rem;
+}
+
+.email {
+  font-size: calc(0.78em + 0.5vw);
+}
+
+.social-links {
+  transition: margin-left 0.4s;
+}
+
+.social-links:hover {
+  margin-left: 20px;
+  transition: 0.30s
+}
+
 /*X-Large devices (large desktops, less than 1400px)*/
 /* @media screen and (max-width: 1400px) { 
 
@@ -260,11 +316,19 @@ h1 {
   .work-block:hover {
     margin-left: 0px;
   }
+
+  .social-links:hover {
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .profile-picture {
     left: 10%;
+  }
+
+  .max-width-inner {
+    max-width: 100%;
   }
 }
 
