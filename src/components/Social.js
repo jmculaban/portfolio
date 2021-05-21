@@ -3,7 +3,7 @@ import { Mail, Linkedin, Twitter, Facebook } from 'react-feather';
 
 const Social = () => {
   return (
-    <div>
+    <div className='link-content'>
       <div className='social-links email'>
         <Mail className='social-logo' />
         culabanjohnmichael@gmail.com
