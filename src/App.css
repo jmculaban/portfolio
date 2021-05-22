@@ -125,7 +125,7 @@ h1 {
   right: 0;
   bottom: 0;
   left: 35%;
-  background-image: url('./assets/img/bg-photo.png');
+  background-image: url('./assets/img/bg-photo-1.png');
   background-size: cover;
   background-repeat: no-repeat;
   animation: bg-photo 1.6s cubic-bezier(.5, .6, .6, 1);
@@ -236,7 +236,7 @@ h4 {
 
 h5 {
   font-size: calc(0.9em + 1vw);
-  margin: 7.5vh 0 3vh 0;
+  margin: 4vh 0 3vh 0;
 }
 
 .social-links {
@@ -264,14 +264,25 @@ h5 {
   transition: 0.30s
 }
 
-.social-content,
+.social-content {
+  margin-bottom: 5em;
+}
+
 .skills-content {
+  margin-bottom: 1em;
+}
+
+.about-content {
   margin-bottom: 5em;
 }
 
 .about-content p {
   line-height: 170%;
   font-size: 1.2rem;
+}
+
+.resume {
+  font-weight: bold;
 }
 
 ul li {
