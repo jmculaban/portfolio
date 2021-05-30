@@ -10,7 +10,7 @@ const Projects = () => {
           <p className='size-small'>Static website using HTML, CSS and Bootstrap</p>
         </div>
       </a>
-      <a href='https://michael-csp2-app-client.glitch.me/' target='_blank' rel="noreferrer">
+      <a href='https://sayun-courses.glitch.me/' target='_blank' rel="noreferrer">
         <div className='work-block'>
           <h2>Sayún</h2>
           <p className='size-small'>Course Booking System</p>
