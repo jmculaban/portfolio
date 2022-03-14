@@ -17,14 +17,14 @@ const Projects = () => {
           <p className='size-small'>Build using MongoDB, Express, Vanilla JS and Node.js</p>
         </div>
       </a>
-      <a href='https://tigana.vercel.app/' target='_blank' rel="noreferrer">
+      {/* <a href='https://tigana.vercel.app/' target='_blank' rel="noreferrer">
         <div className='work-block'>
           <h2>Tigána</h2>
           <p className='size-small'>Budget Tracker App</p>
           <p className='size-small'>On going development</p>
           <p className='size-small'>Build using MongoDB, Express, React/Next JS and Node.js with token based authentication feature.</p>
         </div>
-      </a>
+      </a> */}
     </div>
   );
 };
