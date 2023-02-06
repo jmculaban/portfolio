@@ -7,6 +7,7 @@ const About = () => {
     <div>
       <NavBar />
       <div className='max-width about-block animate'>
+        <h2>Cloud Architect &</h2>
         <h2>Full Stack Web Developer</h2>
         <div className='max-width-inner about-content'>
           <h4>About</h4>
