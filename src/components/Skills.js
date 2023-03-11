@@ -27,7 +27,7 @@ const Skills = () => {
         <h5>Database</h5>
         <ul>
           <li><div className='devicon-mongodb-plain colored'></div>MongoDB</li>
-          <li><div className='devicon-postgresql-plain colored'></div>MongoDB</li>
+          <li><div className='devicon-postgresql-plain colored'></div>PostgreSQL</li>
           <li><div className='devicon-oracle-plain colored'></div>Oracle Database</li>
         </ul>
       </div>
@@ -42,6 +42,15 @@ const Skills = () => {
         <ul>
           <li><div className='devicon-git-plain colored'></div>Git</li>
           <li><div className='devicon-jenkins-plain colored'></div>Jenkins</li>
+          <li><div className='devicon-terraform-plain colored'></div>Terraform</li>
+          <li><div className='devicon-kubernetes-plain colored'></div>Azure Kubernetes</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Agile</h5>
+        <ul>
+          <li><div className='devicon-jira-plain colored'></div>Jira</li>
+          <li><div className='devicon-confluence-plain colored'></div>Confluence</li>
         </ul>
       </div>
     </div>
